@@ -35,7 +35,7 @@ const App = () => {
   }
 
   return (
-    <div className="min-h-screen w-5/6  mx-auto">
+    <div className="min-h-screen w-5/6 mx-auto">
       <header className="bg-red-600 py-6">
         <img
           src="https://www.webjet.com.au/wj-assets/images/webjet-flights-logo-2x.png"
@@ -44,7 +44,7 @@ const App = () => {
         />
       </header>
 
-      <main className="container mx-auto px-4 py-6 bg-gray-50 bg-gray-50">
+      <main className="px-4 py-6 bg-gray-50">
         <h1 className="text-2xl text-red-600 font-bold mb-6">
           {loading ? <div className="h-8 bg-gray-200 rounded w-1/2"></div> : `${filteredHotels.length} Hotels Available in Melbourne`}
         </h1>

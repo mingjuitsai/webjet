@@ -62,7 +62,7 @@ const App = () => {
               <div className="bg-red-50 border-l-4 border-red-600 p-4 rounded">
                 <div className="flex justify-between items-center">
                   <p className="text-red-700">{error}</p>
-                  <button 
+                  <button
                     onClick={refetch}
                     className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
                   >
@@ -70,7 +70,12 @@ const App = () => {
                   </button>
                 </div>
               </div>
-            ) : loading ? <HotelCardsSkeleton /> : filteredHotels.map(hotel => (
+            ) : loading ? <HotelCardsSkeleton /> : filteredHotels.length === 0 ? (
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 text-center">
+                <p className="text-gray-600 text-lg mb-2">Sorry, no hotels match your search criteria</p>
+                <p className="text-gray-500">Try adjusting your filters or search terms</p>
+              </div>
+            ) : filteredHotels.map(hotel => (
               <HotelCard key={hotel.id} hotel={hotel} />
             ))}
           </div>

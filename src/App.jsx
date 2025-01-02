@@ -1,15 +1,29 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
 
-function App() {
+
+const App = () => {
+  const [hotels, setHotels] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   return (
-    <>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="min-h-screen bg-gray-50">
+      <header className="bg-red-600 p-4">
+        <div className="container mx-auto">
+          <img
+            src="https://www.webjet.com.au/wj-assets/images/webjet-flights-logo-2x.png"
+            alt="Webjet"
+            className="h-8"
+          />
+        </div>
+      </header>
 
-export default App
+      <main className="container mx-auto px-4 py-6">
+        <h1 className="text-2xl font-bold mb-6">550 Hotels Available in Melbourne</h1>
+
+      </main>
+    </div>
+  );
+};
+
+export default App;

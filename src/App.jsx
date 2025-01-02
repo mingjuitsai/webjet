@@ -1,11 +1,10 @@
-import { useState } from 'react';
+import React from 'react';
 import Filter from './components/Filter'
-
+import { useHotelsQuery} from './useHotelsQuery';
 
 const App = () => {
-  const [hotels, setHotels] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+
+  const { data, loading, error } = useHotelsQuery();
 
   return (
     <div className="min-h-screen w-3/4  mx-auto">
@@ -24,8 +23,8 @@ const App = () => {
         <div className="lg:flex lg:gap-6">
           <aside className="lg:w-2/6 mb-6 lg:mb-0 px-4 py-2 bg-gray-200">
             <Filter
-              onSearch={() => {}}
-              onRatingFilter={() =>{}}
+              onSearch={() => { }}
+              onRatingFilter={() => { }}
               disabled={loading}
             />
           </aside>

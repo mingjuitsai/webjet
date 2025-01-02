@@ -1,49 +1,52 @@
 {
-    "hotels": [
+  "hotels": [
       {
-        "id": 1,
-        "name": "Oaks on William",
-        "rating": 4.5,
-        "price": 282,
-        "roomType": "Studio Apartment (No Housekeeping)",
-        "image": "https://hotelimages.webjet.com.au/lodging/1000000/850000/845400/845390/e394a620_z.jpg",
-        "area": "CBD"
+          "id": 1,
+          "name": "Oaks on William",
+          "rating": 4.5,
+          "price": 282,
+          "roomType": "Studio Apartment (No Housekeeping)",
+          "image": "https://hotelimages.webjet.com.au/lodging/1000000/850000/845400/845390/e394a620_z.jpg"
       },
       {
-        "id": 2,
-        "name": "Crowne Plaza Melbourne",
-        "rating": 4,
-        "price": 449,
-        "roomType": "Standard Room, Non Smoking",
-        "image": "https://hotelimages.webjet.com.au/lodging/1000000/570000/564500/564404/3398b9cd_z.jpg",
-        "area": "Southbank"
+          "id": 2,
+          "name": "Crowne Plaza Melbourne",
+          "rating": 4,
+          "price": 449,
+          "roomType": "Standard Room, Non Smoking",
+          "image": "https://hotelimages.webjet.com.au/lodging/1000000/570000/564500/564404/3398b9cd_z.jpg"
       },
       {
-        "id": 3,
-        "name": "Novotel Melbourne on Collins",
-        "rating": 4,
-        "price": 401,
-        "roomType": "Deluxe King Room",
-        "image": "https://hotelimages.webjet.com.au/hotels/1000000/850000/845400/845390/0259fb01_z.jpg",
-        "area": "CBD"
+          "id": 3,
+          "name": "Novotel Melbourne on Collins",
+          "rating": 4,
+          "price": 401,
+          "roomType": "Deluxe King Room",
+          "image": "https://hotelimages.webjet.com.au/hotels/1000000/850000/845400/845390/0259fb01_z.jpg"
       },
       {
-        "id": 4,
-        "name": "The Langham Melbourne",
-        "rating": 5,
-        "price": 595,
-        "roomType": "Deluxe River Room",
-        "image": "https://hotelimages.webjet.com.au/hotels/1000000/460000/451200/451160/a1830e51_z.jpg",
-        "area": "Southbank"
+          "id": 4,
+          "name": "The Langham Melbourne",
+          "rating": 5,
+          "price": 595,
+          "roomType": "Deluxe River Room",
+          "image": "https://hotelimages.webjet.com.au/hotels/1000000/460000/451200/451160/a1830e51_z.jpg"
       },
       {
-        "id": 5,
-        "name": "Pan Pacific Melbourne",
-        "rating": 4.5,
-        "price": 375,
-        "roomType": "Deluxe King Room",
-        "image": "https://hotelimages.webjet.com.au/lodging/1000000/30000/23800/23775/0a626b13_z.jpg",
-        "area": "South Wharf"
+          "id": 5,
+          "name": "Pan Pacific Melbourne",
+          "rating": 4.5,
+          "price": 375,
+          "roomType": "Deluxe King Room",
+          "image": "https://hotelimages.webjet.com.au/lodging/1000000/30000/23800/23775/0a626b13_z.jpg"
+      },
+      {
+          "id": 6,
+          "name": "Budget Stay Melbourne",
+          "rating": 2,
+          "price": 159,
+          "roomType": "Standard Twin Room",
+          "image": "https://hotelimages.webjet.com.au/lodging/1000000/850000/845400/845390/e394a620_z.jpg"
       }
-    ]
-  }
+  ]
+}

@@ -7,15 +7,30 @@ const App = () => {
   const { data: hotelsData, loading, error } = useHotelsQuery();
   const [filters, setFilters] = React.useState({
     name: '',
-    ratings: []
+    ratings: new Set()
   });
 
   const filteredHotels = hotelsData.filter(hotel => {
     const nameMatch = hotel.name.toLowerCase().includes(filters.name.toLowerCase());
-    const ratingMatch = filters.ratings.length === 0 || filters.ratings.includes(Math.floor(hotel.rating));
+    const ratingMatch = filters.ratings.size === 0 || filters.ratings.has(Math.floor(hotel.rating));
     return nameMatch && ratingMatch;
   }).sort((a, b) => a.price - b.price);
 
+  const handleRatingFilter = (rating, checked) => {
+
+    if(checked) {
+      filters.ratings.add(rating);
+    } else {
+      filters.ratings.delete(rating);
+    }
+
+    setFilters(prev => ({
+      ...prev,
+      ratings: filters.ratings
+  }));
+
+  
+  }
   return (
     <div className="min-h-screen w-5/6  mx-auto">
       <header className="bg-red-600 py-6">
@@ -33,9 +48,7 @@ const App = () => {
           <aside className="lg:w-2/6 mb-6 lg:mb-0 px-4 py-4 bg-gray-200">
             <Filter
               onSearch={() => { }}
-              onRatingFilter={(rating, e) => {
-                console.log(rating, e);
-              }}
+              onRatingFilter={handleRatingFilter}
               disabled={loading}
             />
           </aside>

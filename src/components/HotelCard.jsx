@@ -16,7 +16,6 @@ const HotelCard = ({ hotel }) => (
                         <h2 className="text-xl font-semibold mb-2">{hotel.name}</h2>
                         <StarRating rating={hotel.rating} />
                         <p className="text-gray-600 mt-2">Room type: {hotel.roomType}</p>
-                        <p className="text-gray-600">Location: {hotel.location}</p>
                     </div>
                     <div className="text-right">
                         <p className="text-2xl font-bold">${hotel.price}</p>

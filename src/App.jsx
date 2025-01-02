@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen w-5/6 mx-auto">
-      <header className="bg-red-600 py-6">
+      <header className="flex justify-center bg-red-600 py-6 sm:block">
         <img
           src="https://www.webjet.com.au/wj-assets/images/webjet-flights-logo-2x.png"
           alt="Webjet"

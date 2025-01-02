@@ -22,10 +22,14 @@ const App = () => {
         <h1 className="text-2xl font-bold mb-6">550 Hotels Available in Melbourne</h1>
 
         <div className="lg:flex lg:gap-6">
-          <aside className="lg:w-1/4 mb-6 lg:mb-0 px-4 py-2 bg-gray-200">
-            02
+          <aside className="lg:w-2/6 mb-6 lg:mb-0 px-4 py-2 bg-gray-200">
+            <Filter
+              onSearch={() => {}}
+              onRatingFilter={() =>{}}
+              disabled={loading}
+            />
           </aside>
-          <div className="lg:w-3/4 px-4 py-2">
+          <div className="lg:w-4/6 px-4 py-2">
             03
           </div>
         </div>

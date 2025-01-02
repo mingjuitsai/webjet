@@ -24,7 +24,7 @@ const useHotelsQuery = function () {
     }, []);
 
 
-    return { data, loading, error};
+    return { data, loading, error, refetch: loadHotels};
 }
 
 export { useHotelsQuery }
